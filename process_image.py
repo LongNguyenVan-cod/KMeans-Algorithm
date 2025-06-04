@@ -9,7 +9,7 @@ image = plt.imread('a.jpg')
 width = image.shape[0]
 height = image.shape[1]
 
-# Reshape mensional of image
+# Reshape mensional of image, standard RGBN-"4", RGB-"3"
 image = image.reshape(width*height, 4)
 
 # Use algorithm
@@ -20,7 +20,8 @@ clusters = kmeans.cluster_centers_
 # print(clusters)
 
 # Craete image_2 like mensional image after reshape
-image_2 = numpy.zeros((width,height,4), dtype=numpy.float32)  #float32, uint8
+# Standard RGBN - "float32", RGB - "uint8"
+image_2 = numpy.zeros((width,height,4), dtype=numpy.float32)  
 
 index = 0
 for i in range(width):
