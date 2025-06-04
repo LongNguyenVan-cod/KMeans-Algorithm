@@ -3,7 +3,7 @@ from sklearn.cluster import KMeans
 import numpy
 
 # Read file image
-image = plt.imread('a.jpg')
+image = plt.imread('image.jpg')
 
 # Create width, height of image
 width = image.shape[0]
