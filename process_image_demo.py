@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy
 from sklearn.cluster import KMeans
 
-image = plt.imread('iron_man_2.jpg')
+image = plt.imread('image.jpg')
 print(image.shape) 
 
 width = image.shape[0]
